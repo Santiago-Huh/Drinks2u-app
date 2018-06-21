@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_menu_home"
+            android:title="@string/menu_inicio" />
+        <item
+            android:id="@+id/nav_cash"
+            android:icon="@drawable/ic_menu_cash"
+            android:title="Pagos" />
+        <item
+            android:id="@+id/nav_moto"
+            android:icon="@drawable/ic_menu_moto"
+            android:title="Pedidos" />
+        <item
+            android:id="@+id/nav_alerts"
+            android:icon="@drawable/ic_menu_notifications"
+            android:title="Notificaciones" />
+        <item
+            android:id="@+id/nav_account"
+            android:icon="@drawable/ic_menu_account"
+            android:title="Mi Cuenta" />
+    </group>
+
+    <item android:title="Opciones">
+        <menu>
+            <item
+                android:id="@+id/nav_tools"
+                android:icon="@drawable/ic_menu_manage"
+                android:title="Configuraciones" />
+            <item
+                android:id="@+id/nav_report"
+                android:icon="@drawable/ic_menu_report"
+                android:title="Reportar" />
+        </menu>
+    </item>
+
+</menu>
