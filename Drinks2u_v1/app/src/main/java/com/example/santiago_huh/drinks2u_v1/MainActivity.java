@@ -2,6 +2,7 @@ package com.example.santiago_huh.drinks2u_v1;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.app.FragmentManager;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -12,9 +13,11 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+    private TextView info;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +25,12 @@ public class MainActivity extends AppCompatActivity
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        info = (TextView)findViewById(R.id.info);
+
+        /****Iniciar con mi fragmento home****/
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        fragmentManager.beginTransaction().replace(R.id.principal,new FragHome()).commit();
+        /****Iniciar con mi fragmento home****/
 
         /*FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
@@ -40,28 +49,6 @@ public class MainActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
-
-        navegacion();
-    }
-
-    public void navegacion(){
-        Button pagos = (Button) findViewById(R.id.button1);
-        pagos.setOnClickListener((new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent cash = new Intent(getApplicationContext(), Pagos.class);
-                startActivity(cash);
-            }
-        }));
-
-        Button pedidos = (Button) findViewById(R.id.button2);
-        pedidos.setOnClickListener((new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent pedi = new Intent(getApplicationContext(), Pedidos.class);
-                startActivity(pedi);
-            }
-        }));
     }
 
     @Override
@@ -74,14 +61,14 @@ public class MainActivity extends AppCompatActivity
         }
     }
 
-    @Override
+    /*@Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.main, menu);
         return true;
-    }
+    }*/
 
-    @Override
+    /*@Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle action bar item clicks here. The action bar will
         // automatically handle clicks on the Home/Up button, so long
@@ -94,22 +81,22 @@ public class MainActivity extends AppCompatActivity
         }
 
         return super.onOptionsItemSelected(item);
-    }
+    }*/
 
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
         int id = item.getItemId();
-
+        FragmentManager fm = getSupportFragmentManager();
         if (id == R.id.nav_home) {
-            // Handle the camera action
+            fm.beginTransaction().replace(R.id.principal,new FragHome()).commit();
         } else if (id == R.id.nav_cash) {
-
+            fm.beginTransaction().replace(R.id.principal,new FragPagos()).commit();
         } else if (id == R.id.nav_moto) {
-
+            fm.beginTransaction().replace(R.id.principal,new FragPedidos()).commit();
         } else if (id == R.id.nav_alerts) {
-
+            fm.beginTransaction().replace(R.id.principal,new FragNotificaciones()).commit();
         } else if (id == R.id.nav_account) {
 
         } else if (id == R.id.nav_tools) {
