@@ -24,6 +24,6 @@
     <string name="search">Buscar</string>
     <string name="card_title">Ejemplo</string>
     <string name="card_content">Esto contiene el contenido de todo lo que llevara la descripción  del producto.</string>
-    <string name="action_view">Ver Producto</string>
+    <string name="action_view">Detalles</string>
     <string name="action_carrito">Agregar a Carrito</string>
 </resources>

@@ -1,6 +1,7 @@
 package com.example.santiago_huh.drinks2u_v1;
 
 import android.content.Intent;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.v4.app.FragmentManager;
 import android.view.View;
@@ -12,12 +13,20 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.Button;
+import android.widget.ImageSwitcher;
+import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.ViewSwitcher;
+
+import java.sql.Time;
+import java.util.Timer;
+import java.util.TimerTask;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
-    private TextView info;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,7 +34,6 @@ public class MainActivity extends AppCompatActivity
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        info = (TextView)findViewById(R.id.info);
 
         /****Iniciar con mi fragmento home****/
         FragmentManager fragmentManager = getSupportFragmentManager();
@@ -98,7 +106,7 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.nav_alerts) {
             fm.beginTransaction().replace(R.id.principal,new FragNotificaciones()).commit();
         } else if (id == R.id.nav_account) {
-
+            fm.beginTransaction().replace(R.id.principal,new FragCuenta()).commit();
         } else if (id == R.id.nav_tools) {
 
         } else if (id == R.id.nav_report){
