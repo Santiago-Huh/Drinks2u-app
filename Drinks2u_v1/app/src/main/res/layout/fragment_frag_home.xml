@@ -18,7 +18,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
-        <!--<RelativeLayout
+        <RelativeLayout
             android:layout_width="fill_parent"
             android:layout_height="fill_parent">
             <LinearLayout
@@ -31,14 +31,14 @@
                     android:layout_height="200dp">
                 </ImageSwitcher>
             </LinearLayout>
-        </RelativeLayout>-->
+        </RelativeLayout>
 
-            <ImageView
+            <!--<ImageView
                 android:id="@+id/imageView3"
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
                 android:scaleType="centerCrop"
-                app:srcCompat="@drawable/banner" />
+                app:srcCompat="@drawable/banner" />-->
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">

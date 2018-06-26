@@ -28,12 +28,15 @@ import java.util.TimerTask;
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+
 
         /****Iniciar con mi fragmento home****/
         FragmentManager fragmentManager = getSupportFragmentManager();
@@ -108,9 +111,9 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.nav_account) {
             fm.beginTransaction().replace(R.id.principal,new FragCuenta()).commit();
         } else if (id == R.id.nav_tools) {
-
+            fm.beginTransaction().replace(R.id.principal,new FragConfiguraciones()).commit();
         } else if (id == R.id.nav_report){
-
+            fm.beginTransaction().replace(R.id.principal,new FragReporte()).commit();
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

@@ -20,7 +20,7 @@
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@mipmap/ic_launcher_final" />
+        android:src="@drawable/logonav" />
 
     <ProgressBar
         android:id="@+id/progressBar"
@@ -51,6 +51,7 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
         android:layout_marginBottom="363dp"
         android:text="@string/txt_wel"
         android:textColor="#FFFFFF"
