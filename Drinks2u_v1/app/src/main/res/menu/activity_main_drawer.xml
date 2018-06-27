@@ -3,6 +3,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:showIn="navigation_view">
 
+    <!--
+    Este xml tiene como proposito modificar las opciones que apareceran
+    en la barra lateral, se puede agregar o quitar imagenes o secciones
+    que se desean
+    -->
+
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_home"

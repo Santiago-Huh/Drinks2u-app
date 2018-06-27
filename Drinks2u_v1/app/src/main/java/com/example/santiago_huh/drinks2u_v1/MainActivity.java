@@ -94,6 +94,11 @@ public class MainActivity extends AppCompatActivity
         return super.onOptionsItemSelected(item);
     }*/
 
+    /*En esta sección de Main Activity se declara un Fragmaneger que obtendra los soprtes para el agente de
+    * fragmentos, una vez declarado, llamamos a la variable que contiene al FragmentMAnager y emepzamos
+    * una Transaccion que lo que hara sera reemplazar el conteint original por el contenido del fragmento
+    * que se desea mostrar.*/
+
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {

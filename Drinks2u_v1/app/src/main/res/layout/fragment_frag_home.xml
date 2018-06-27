@@ -8,6 +8,10 @@
     tools:context=".FragHome"
     android:orientation="vertical">
 
+    <!--Este es uno de los 7 fragmentos que apareceran cuando se
+    de clic en algunas de las opciones que se vieron en
+    el activity_main_drawer.xml-->
+
     <!-- TODO: Update blank fragment layout -->
     <ScrollView
         android:layout_width="match_parent"

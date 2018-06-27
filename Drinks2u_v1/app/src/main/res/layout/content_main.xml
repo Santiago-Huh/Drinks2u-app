@@ -19,6 +19,11 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
+            <!--Esta sección de la barra lateral siempre de permanecer en blanco
+            pues si este es modificado con la inclusión de algun boton o texto
+            este al momento de cambiar el fragmento se vera junto con su contenido
+            -->
+
             <!--<ImageView
                 android:id="@+id/imageView3"
                 android:layout_width="match_parent"
