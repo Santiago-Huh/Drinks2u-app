@@ -1,4 +1,4 @@
-package com.example.santiago_huh.drinks2u_v1;
+package com.example.santiago_huh.drinks2u_v1.fragments;
 
 import android.graphics.Bitmap;
 import android.graphics.drawable.BitmapDrawable;
@@ -12,6 +12,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+
+import com.example.santiago_huh.drinks2u_v1.R;
 
 
 public class FragCuenta extends Fragment {

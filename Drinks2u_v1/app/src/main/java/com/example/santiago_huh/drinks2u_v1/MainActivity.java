@@ -1,29 +1,22 @@
 package com.example.santiago_huh.drinks2u_v1;
 
-import android.content.Intent;
-import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.v4.app.FragmentManager;
-import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.view.Menu;
 import android.view.MenuItem;
-import android.view.animation.Animation;
-import android.view.animation.AnimationUtils;
-import android.widget.Button;
-import android.widget.ImageSwitcher;
-import android.widget.ImageView;
-import android.widget.TextView;
-import android.widget.ViewSwitcher;
 
-import java.sql.Time;
-import java.util.Timer;
-import java.util.TimerTask;
+import com.example.santiago_huh.drinks2u_v1.fragments.FragConfiguraciones;
+import com.example.santiago_huh.drinks2u_v1.fragments.FragCuenta;
+import com.example.santiago_huh.drinks2u_v1.fragments.FragHome;
+import com.example.santiago_huh.drinks2u_v1.fragments.FragNotificaciones;
+import com.example.santiago_huh.drinks2u_v1.fragments.FragPagos;
+import com.example.santiago_huh.drinks2u_v1.fragments.FragPedidos;
+import com.example.santiago_huh.drinks2u_v1.fragments.FragReporte;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {

@@ -1,4 +1,4 @@
-package com.example.santiago_huh.drinks2u_v1;
+package com.example.santiago_huh.drinks2u_v1.fragments;
 
 import android.content.Context;
 import android.net.Uri;
@@ -8,6 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.santiago_huh.drinks2u_v1.R;
 
 
 public class FragPagos extends Fragment {

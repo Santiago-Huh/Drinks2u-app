@@ -1,10 +1,12 @@
-package com.example.santiago_huh.drinks2u_v1;
+package com.example.santiago_huh.drinks2u_v1.fragments;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import com.example.santiago_huh.drinks2u_v1.R;
 
 
 public class FragNotificaciones extends Fragment {

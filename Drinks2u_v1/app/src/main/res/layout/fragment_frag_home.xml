@@ -5,7 +5,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FragHome"
+    tools:context=".fragments.FragHome"
     android:orientation="vertical">
 
     <!--Este es uno de los 7 fragmentos que apareceran cuando se
